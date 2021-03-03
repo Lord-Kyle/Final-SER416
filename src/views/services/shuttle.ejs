@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<%- include('../components/header.ejs', {title: title}) %>
+
+<body>
+
+  <%- include('../components/navbar.ejs') %>
+
+  <div class="row div-pad-md">
+    <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-center text-danger">
+        <h2> Request a Shuttle </h2>
+      </div>
+	<div class="col-sm-1"></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md"></div>
+      <div class="col-md-10 text-center">
+        <h4>Pick Up and Drop Off Locations</h4>
+      </div>
+	    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row div-pad-md">
+    <div class="col-md"></div>
+      <div class="col-md-10 text-center">
+        <label for="inputAddress"><h5>Starting Address:</h5></label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Where Are You?">       
+      </div>
+	    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row div-pad-md">
+    <div class="col-md"></div>
+      <div class="col-md-10 text-center">
+        <label for="inputAddress"><h5>Ending Address:</h5></label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Where Do You Want To Go?">       
+      </div>
+	    <div class="col-sm-1"></div>
+  </div>
+
+
+  <%- include('../components/select-date.ejs') %>
+
+  <%- include('../components/footer.ejs') %>
+
+</body>
+
+</html>

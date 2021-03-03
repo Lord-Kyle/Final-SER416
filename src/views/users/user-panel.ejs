@@ -1,0 +1,124 @@
+<!-- Example of sub view depth level one -->
+<!DOCTYPE html>
+<html>
+<%- include('../components/header.ejs', {title: title}) %>
+
+<body>
+
+  <%- include('../components/navbar-signed-in.ejs') %>
+
+  <div class="row div-pad-md">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 text-center">
+      <h2>Welcome, Kimberlee Gentry</h2>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row pad-sm">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-header bg-warning">
+          <h4>User Information</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <h5> Name:</h5> &nbsp;&nbsp;&nbsp;Kimberlee Gentry
+          </li>
+          <li class="list-group-item">
+            <h5>Addres:</h5> &nbsp;&nbsp;&nbsp;Prescott, AZ
+          </li>
+          <li class="list-group-item">
+            <h5>Prefered Payment:</h5>
+            &nbsp;&nbsp;&nbsp;Credit Card: ****-****-****-2411 <br>
+            &nbsp;&nbsp;&nbsp;Expr: 03/20
+          </li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Edit User Information</a>
+          <a href="#" class="card-link">Add A Payment Method</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-header bg-warning">
+          <h4>Enrolled Courses</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> $80 Learn to Paint (May '19)</li>
+          <li class="list-group-item"> $80 Learn to Paint (June '19)</li>
+		  <li class="list-group-item"> $80 Learn to Paint (July '19)</li>
+          <li class="list-group-item"> $80 Learn To Paint (August '19)</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Drop A Course</a>
+          <a href="#" class="card-link">Enroll In A New Course</a>
+        </div>
+      </div>
+    </div>
+  <div class="col-md-1"></div>
+  </div>
+
+  <div class="row pad-sm">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-header bg-warning">
+          <h4>Upcoming Payments</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> $80 Learn to Paint (September '19)</li>
+          <li class="list-group-item"> $80 Learn to Paint (October '19)</li>
+		  <li class="list-group-item"> $80 Learn to Paint (November '19)</li>
+          <li class="list-group-item"> $80 Learn To Paint (December '19)</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Cancel Pending Payment </a>
+          <a href="#" class="card-link">Manage Subscriptions</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-header bg-warning">
+          <h4>Recent Payment History</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> 12/01/2019 - $80 Class Fee</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">View Full Payment History</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <div class="row pad-sm">
+    <div class="col-md-1"></div>
+    <div class="col-md-5"></div>
+    <div class="col-md-5"></div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <div class="row pad-sm">
+    <div class="col-md-1"></div>
+    <div class="col-md-5"></div>
+    <div class="col-md-5"></div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <div class="row pad-sm">
+    <div class="col-md-1"></div>
+    <div class="col-md-5"></div>
+    <div class="col-md-5"></div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <%- include('../components/footer.ejs') %>
+
+</body>
+
+</html>

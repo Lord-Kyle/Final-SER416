@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <!-- modified from example https://getbootstrap.com/docs/4.1/components/navbar/ -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light text-danger bg-warning pad-sm">
+    <a class="navbar-brand" href="/"><h1>Best Community Service</h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <h5><a class="nav-link" href="/donate">Donate</a></h5>
+        <li class="nav-item">
+          <h5><a class="nav-link" href="/volunteer">Volunteer</a></h5>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <h5>Services</h5>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		    <a class="dropdown-item" href="/services/education">Classes</a>
+			<a class="dropdown-item" href="/services/catering">Request Catering</a>
+			<a class="dropdown-item" href="/services/shuttle">Request a Shuttle</a>
+            <a class="dropdown-item" href="/rentals/equipment">Reserve Equipment</a>
+            <a class="dropdown-item" href="/rentals/rooms">Reserve a Room</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/services/search">Search for a Service</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <h5><a class="nav-link" href="/events">Events</a></h5>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <h5><a href="/users/login"><button type="button" class="btn btn-danger text-warning ">Log In</button></a></h5>
+        </li>
+      </ul>
+    </div>
+  </nav>

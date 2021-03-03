@@ -1,0 +1,78 @@
+<!-- Example of sub view depth level one -->
+<!DOCTYPE html>
+<html>
+<%- include('../components/header.ejs', {title: title}) %>
+
+<body>
+
+  <%- include('../components/navbar.ejs') %>
+
+  <div class="row div-pad-md">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 text-center text-danger">
+      <h2>Search for a Service</h2>
+      <br>
+      <!-- Search form modified from https://mdbootstrap.com/docs/jquery/forms/search/-->
+      <form class="form-inline" action="/services/search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search for a Services"
+          aria-label="Search">
+      </form>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row div-pad-md">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 ">
+      <div class="card">
+        <div class="card-body">
+          <a href="#">
+            <h5 class="card-title">Search Result 1</h5>
+          </a>
+          <p class="card-text">
+            This is the brief description for search result 1.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="row div-pad-md">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 ">
+      <div class="card">
+        <div class="card-body">
+          <a href="#">
+            <h5 class="card-title">Search Result 1</h5>
+          </a>
+          <p class="card-text">
+            This is the brief description for search result 2.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="row div-pad-md">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 ">
+      <div class="card">
+        <div class="card-body">
+          <a href="#">
+            <h5 class="card-title">Search Result 3</h5>
+          </a>
+          <p class="card-text">
+            This is the brief description for search result 2.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <%- include('../components/footer.ejs') %>
+
+</body>
+
+</html>

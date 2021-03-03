@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<%- include('components/header.ejs', {title: title}) %>
+
+<body>
+
+  <%- include('components/navbar.ejs') %>
+
+  <div class="row div-pad-md">
+    <div class="col-sm text-center text-white">
+      <div class="jumbotron bg-danger">
+        <h1>Best Community Service</h1>
+        <p class="lead">Making our place the best community, one service at a time.</p>
+        <hr class="my-2 hr-white ">
+          <h5>Best Community Service (BCS) is proud to offer our community and family the services
+		  of caring, compassionate and talented volunteers. We provide rooms for meetings and events,
+		  catering volunteers, meeting equipment, classes and shuttle services.</h5>
+        <div class="row">
+            <div class="col-md-4">    </div>
+            <div class="col-md-4 text-center">
+              <!-- Search form modified from https://mdbootstrap.com/docs/jquery/forms/search/-->
+              <form class="form-inline" action="/services/search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search for a Service" aria-label="Search">
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-deck pad-lg">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title bg-warning text-light pad-xs">Volunteer</h4>
+        <h5>
+          Want to get involved in BCS’s dynamic Volunteer Services program? Complete an application and interview.
+		  This is a wonderful way to show future employers your work ethic and kind soul.
+        </h5>
+      </div>
+      <div class="card-footer"><a href="volunteer" class="btn btn-danger">View Volunteer Opportunities</a></div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title bg-warning text-light pad-xs">Donations</h4>
+        <h5>
+          We provide services for no financial or social gain. Please consider donating to help us provide better
+		  and more services in our community.
+        </h5>
+      </div>
+      <div class="card-footer"><a href="/donate" class="btn btn-danger">Learn How To Donate</a></div>
+    </div>
+  </div>
+
+  <div class="card-deck pad-lg">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title bg-warning text-light pad-xs">Equipment Rentals</h4>
+        <h5>
+          We rent a variety of equipment for meetings, sports events, and community gatherings.
+        </h5>
+      </div>
+      <div class="card-footer">
+        <a href="rentals/equipment" class="btn btn-danger">View Equipment Rentals</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title bg-warning text-light pad-xs">Classes</h4>
+        <h5>
+          We have classes to improve and expand your skillset.
+        </h5>
+      </div>
+      <div class="card-footer">
+        <a href="services/education" class="btn btn-danger">View Classes</a>
+      </div>
+    </div>
+  </div>
+  <%- include('components/footer.ejs') %>
+
+</body>
+
+</html>

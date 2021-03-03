@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<%- include('components/header.ejs', {title: title}) %>
+
+<body>
+
+  <%- include('components/navbar.ejs') %>
+
+  <div class="row div-pad-md">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 text-center text-danger">
+      <h2> Donate Today </h2>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row div-pad-md">
+    <div class="col-sm-4 ">
+      <h3>Dontation Levels</h3>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Star</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Donations Less Than $20</h6>
+          <p class="card-text">
+            Christopher Risser, Curtis Smith, Dylan Johnson, Elizabeth Mos, Ermich Koch, Eric Saugstad, Garrett Pierce,
+			Henry Barton, Ira Sigman, Julio Jovel, Kyle Jeffreys, Myles Colina, Shelton Lacy, Steward Johnson, Aaron Khan
+          </p>
+          <a href="#" class="card-link">Donate Now</a>
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+      <hr>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Champion</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Donations Greater Than $20</h6>
+          <p class="card-text">
+            Abigail Ida, Adam Farmelo, Andrew Young, Anthony Decosta, Antonia Cypert, Armando Minor, Brandon Stewart,
+			Brayden Giffen, Brian Coley, Bryan Culver, Cameron Troy, Catherine Khongsaly, Chandler Boone
+          </p>
+          <a href="#" class="card-link">Donate Now</a>
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+      <hr>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Hero</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Dontation Greater Than $100</h6>
+          <p class="card-text">
+            Kimberlee Gentry, Kevin Buell, Suddhasvatta Das
+          </p>
+          <a href="#" class="card-link">Donate Now</a>
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-8 ">
+
+      <h6> Thank you for making your comminuty a better place. We rely on donations to keep our programs affordable and accessible.</h6>
+      <br>
+      <%- include('components/payment.ejs', {payment: 'Donation'}) %>
+
+    </div>
+
+  </div>
+
+  <%- include('components/footer.ejs') %>
+
+
+</body>
+
+</html>
